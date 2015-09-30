@@ -34,5 +34,10 @@ root@aafak-HP-ProBook-4530s:~/aafak/git-demo/mycloud# git commit -m "my first fi
 [master 2baa555] my first file
  1 file changed, 1 insertion(+)
  create mode 100644 test.c
+root@aafak-HP-ProBook-4530s:~/aafak/git-demo/mycloud# git status
+# On branch master
+# Your branch is ahead of 'origin/master' by 1 commit.
+#
+nothing to commit (working directory clean)
 root@aafak-HP-ProBook-4530s:~/aafak/git-demo/mycloud# 
 
