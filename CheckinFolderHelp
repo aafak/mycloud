@@ -1,0 +1,161 @@
+root@aafak-HP-ProBook-4530s:~/aafak/git-demo/mycloud# ls
+help  README.md
+
+copy the entire workspace content to /aafak/git-demo/mycloud
+root@aafak-HP-ProBook-4530s:~/aafak/git-demo/mycloud# git status
+# On branch master
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	WebContent/
+#	build/
+#	refrences/
+#	src/
+nothing added to commit but untracked files present (use "git add" to track)
+root@aafak-HP-ProBook-4530s:~/aafak/git-demo/mycloud# git add
+Nothing specified, nothing added.
+Maybe you wanted to say 'git add .'?
+root@aafak-HP-ProBook-4530s:~/aafak/git-demo/mycloud# git add WebContent/ build/ refrences/ src/
+root@aafak-HP-ProBook-4530s:~/aafak/git-demo/mycloud# git status
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	new file:   WebContent/META-INF/MANIFEST.MF
+#	new file:   WebContent/WEB-INF/lib/activation-1.1.jar
+#	new file:   WebContent/WEB-INF/lib/asm-3.1.jar
+#	new file:   WebContent/WEB-INF/lib/commons-collections-3.1.jar
+#	new file:   WebContent/WEB-INF/lib/commons-io-1.2.jar
+#	new file:   WebContent/WEB-INF/lib/dom4j.jar
+#	new file:   WebContent/WEB-INF/lib/ejb3-persistence.jar
+#	new file:   WebContent/WEB-INF/lib/google-gson-1.7.1.jar
+#	new file:   WebContent/WEB-INF/lib/hibernate-annotations.jar
+#	new file:   WebContent/WEB-INF/lib/hibernate-commons-annotations.jar
+#	new file:   WebContent/WEB-INF/lib/hibernate-entitymanager.jar
+#	new file:   WebContent/WEB-INF/lib/hibernate-validator.jar
+#	new file:   WebContent/WEB-INF/lib/hibernate3.jar
+#	new file:   WebContent/WEB-INF/lib/jackson-core-asl-1.7.1.jar
+#	new file:   WebContent/WEB-INF/lib/jackson-jaxrs-1.7.1.jar
+#	new file:   WebContent/WEB-INF/lib/jackson-mapper-asl-1.7.1.jar
+#	new file:   WebContent/WEB-INF/lib/jackson-xc-1.7.1.jar
+#	new file:   WebContent/WEB-INF/lib/javassist-3.9.0.GA.jar
+#	new file:   WebContent/WEB-INF/lib/jaxb-api-2.2.2.jar
+#	new file:   WebContent/WEB-INF/lib/jaxb-impl-2.2.3-1.jar
+#	new file:   WebContent/WEB-INF/lib/jersey-client-1.8.jar
+#	new file:   WebContent/WEB-INF/lib/jersey-core-1.8.jar
+#	new file:   WebContent/WEB-INF/lib/jersey-json-1.8.jar
+#	new file:   WebContent/WEB-INF/lib/jersey-multipart-1.8.jar
+#	new file:   WebContent/WEB-INF/lib/jersey-server-1.8.jar
+#	new file:   WebContent/WEB-INF/lib/jettison-1.1.jar
+#	new file:   WebContent/WEB-INF/lib/jsp-api.jar
+#	new file:   WebContent/WEB-INF/lib/jta-1.1.jar
+#	new file:   WebContent/WEB-INF/lib/junit-4.8.2.jar
+#	new file:   WebContent/WEB-INF/lib/junit.jar
+#	new file:   WebContent/WEB-INF/lib/log4j-1.2.14.jar
+#	new file:   WebContent/WEB-INF/lib/mimepull-1.6.jar
+#	new file:   WebContent/WEB-INF/lib/mysql-connector-java-5.1.29-bin.jar
+#	new file:   WebContent/WEB-INF/lib/rabbitmq-client-tests.jar
+#	new file:   WebContent/WEB-INF/lib/rabbitmq-client.jar
+#	new file:   WebContent/WEB-INF/lib/servlet-api.jar
+#	new file:   WebContent/WEB-INF/lib/slf4j-api-1.5.8.jar
+#	new file:   WebContent/WEB-INF/lib/slf4j-log4j12-1.5.8.jar
+#	new file:   WebContent/WEB-INF/lib/stax-api-1.0-2.jar
+#	new file:   WebContent/WEB-INF/lib/stax-api-1.0.1.jar
+#	new file:   WebContent/WEB-INF/web.xml
+#	new file:   WebContent/css/style.css
+#	new file:   WebContent/home.jsp
+#	new file:   WebContent/images/image.png
+#	new file:   WebContent/index.jsp
+#	new file:   WebContent/js/jquery/jquery-1.11.3.min.js
+#	new file:   WebContent/js/login.js
+#	new file:   WebContent/test.jsp
+#	new file:   WebContent/webpages/document.html
+#	new file:   WebContent/webpages/home.jsp
+#	new file:   build/classes/com/mycloud/error/Error.class
+#	new file:   build/classes/com/mycloud/rest/LoginService.class
+#	new file:   build/classes/com/mycloud/rest/UserService.class
+#	new file:   build/classes/com/mycloud/user/User.class
+#	new file:   refrences/html5 and css3.pdf
+#	new file:   src/com/mycloud/error/Error.java
+#	new file:   src/com/mycloud/rest/LoginService.java
+#	new file:   src/com/mycloud/rest/UserService.java
+#	new file:   src/com/mycloud/user/User.java
+#
+root@aafak-HP-ProBook-4530s:~/aafak/git-demo/mycloud# 
+
+root@aafak-HP-ProBook-4530s:~/aafak/git-demo/mycloud# git commit -m "Adding the complete workspace"
+[master 378ab5d] Adding the complete workspace
+ 58 files changed, 390 insertions(+)
+ create mode 100644 WebContent/META-INF/MANIFEST.MF
+ create mode 100644 WebContent/WEB-INF/lib/activation-1.1.jar
+ create mode 100644 WebContent/WEB-INF/lib/asm-3.1.jar
+ create mode 100644 WebContent/WEB-INF/lib/commons-collections-3.1.jar
+ create mode 100644 WebContent/WEB-INF/lib/commons-io-1.2.jar
+ create mode 100644 WebContent/WEB-INF/lib/dom4j.jar
+ create mode 100644 WebContent/WEB-INF/lib/ejb3-persistence.jar
+ create mode 100644 WebContent/WEB-INF/lib/google-gson-1.7.1.jar
+ create mode 100644 WebContent/WEB-INF/lib/hibernate-annotations.jar
+ create mode 100644 WebContent/WEB-INF/lib/hibernate-commons-annotations.jar
+ create mode 100644 WebContent/WEB-INF/lib/hibernate-entitymanager.jar
+ create mode 100644 WebContent/WEB-INF/lib/hibernate-validator.jar
+ create mode 100644 WebContent/WEB-INF/lib/hibernate3.jar
+ create mode 100644 WebContent/WEB-INF/lib/jackson-core-asl-1.7.1.jar
+ create mode 100644 WebContent/WEB-INF/lib/jackson-jaxrs-1.7.1.jar
+ create mode 100644 WebContent/WEB-INF/lib/jackson-mapper-asl-1.7.1.jar
+ create mode 100644 WebContent/WEB-INF/lib/jackson-xc-1.7.1.jar
+ create mode 100644 WebContent/WEB-INF/lib/javassist-3.9.0.GA.jar
+ create mode 100644 WebContent/WEB-INF/lib/jaxb-api-2.2.2.jar
+ create mode 100644 WebContent/WEB-INF/lib/jaxb-impl-2.2.3-1.jar
+ create mode 100644 WebContent/WEB-INF/lib/jersey-client-1.8.jar
+ create mode 100644 WebContent/WEB-INF/lib/jersey-core-1.8.jar
+ create mode 100644 WebContent/WEB-INF/lib/jersey-json-1.8.jar
+ create mode 100644 WebContent/WEB-INF/lib/jersey-multipart-1.8.jar
+ create mode 100644 WebContent/WEB-INF/lib/jersey-server-1.8.jar
+ create mode 100644 WebContent/WEB-INF/lib/jettison-1.1.jar
+ create mode 100644 WebContent/WEB-INF/lib/jsp-api.jar
+ create mode 100644 WebContent/WEB-INF/lib/jta-1.1.jar
+ create mode 100644 WebContent/WEB-INF/lib/junit-4.8.2.jar
+ create mode 100644 WebContent/WEB-INF/lib/junit.jar
+ create mode 100644 WebContent/WEB-INF/lib/log4j-1.2.14.jar
+ create mode 100644 WebContent/WEB-INF/lib/mimepull-1.6.jar
+ create mode 100644 WebContent/WEB-INF/lib/mysql-connector-java-5.1.29-bin.jar
+ create mode 100644 WebContent/WEB-INF/lib/rabbitmq-client-tests.jar
+ create mode 100644 WebContent/WEB-INF/lib/rabbitmq-client.jar
+ create mode 100644 WebContent/WEB-INF/lib/servlet-api.jar
+ create mode 100644 WebContent/WEB-INF/lib/slf4j-api-1.5.8.jar
+ create mode 100644 WebContent/WEB-INF/lib/slf4j-log4j12-1.5.8.jar
+ create mode 100644 WebContent/WEB-INF/lib/stax-api-1.0-2.jar
+ create mode 100644 WebContent/WEB-INF/lib/stax-api-1.0.1.jar
+ create mode 100644 WebContent/WEB-INF/web.xml
+ create mode 100644 WebContent/css/style.css
+ create mode 100644 WebContent/home.jsp
+ create mode 100644 WebContent/images/image.png
+ create mode 100644 WebContent/index.jsp
+ create mode 100644 WebContent/js/jquery/jquery-1.11.3.min.js
+ create mode 100644 WebContent/js/login.js
+ create mode 100644 WebContent/test.jsp
+ create mode 100644 WebContent/webpages/document.html
+ create mode 100644 WebContent/webpages/home.jsp
+ create mode 100644 build/classes/com/mycloud/error/Error.class
+ create mode 100644 build/classes/com/mycloud/rest/LoginService.class
+ create mode 100644 build/classes/com/mycloud/rest/UserService.class
+ create mode 100644 build/classes/com/mycloud/user/User.class
+ create mode 100644 refrences/html5 and css3.pdf
+ create mode 100644 src/com/mycloud/error/Error.java
+ create mode 100644 src/com/mycloud/rest/LoginService.java
+ create mode 100644 src/com/mycloud/rest/UserService.java
+ create mode 100644 src/com/mycloud/user/User.java
+root@aafak-HP-ProBook-4530s:~/aafak/git-demo/mycloud# 
+root@aafak-HP-ProBook-4530s:~/aafak/git-demo/mycloud# git push
+Username for 'https://github.com': aafak
+Password for 'https://aafak@github.com': 
+Counting objects: 85, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (68/68), done.
+Writing objects: 100% (84/84), 11.16 MiB | 1.66 MiB/s, done.
+Total 84 (delta 3), reused 0 (delta 0)
+To https://github.com/aafak/mycloud.git
+   f9c6741..378ab5d  master -> master
+root@aafak-HP-ProBook-4530s:~/aafak/git-demo/mycloud# 
+
+
