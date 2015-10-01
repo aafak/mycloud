@@ -33,3 +33,7 @@ root@aafak-HP-ProBook-4530s:~/aafak/git-demo/mycloud# git status
 
 nothing to commit (working directory clean)
 root@aafak-HP-ProBook-4530s:~/aafak/git-demo/mycloud# 
+
+TO update:
+root@aafak-HP-ProBook-4530s:~/aafak/git-demo/mycloud# git pull
+
