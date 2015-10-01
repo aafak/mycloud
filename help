@@ -37,3 +37,18 @@ root@aafak-HP-ProBook-4530s:~/aafak/git-demo/mycloud#
 TO update:
 root@aafak-HP-ProBook-4530s:~/aafak/git-demo/mycloud# git pull
 
+
+to checkin:
+root@aafak-HP-ProBook-4530s:~/aafak/git-demo/mycloud# git push
+Username for 'https://github.com': aafak
+Password for 'https://aafak@github.com': behonestcb32
+Counting objects: 10, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (7/7), 809 bytes, done.
+Total 7 (delta 2), reused 0 (delta 0)
+To https://github.com/aafak/mycloud.git
+   f864a4e..c1a857d  master -> master
+root@aafak-HP-ProBook-4530s:~/aafak/git-demo/mycloud# 
+
+
