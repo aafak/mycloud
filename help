@@ -42,7 +42,7 @@ help  README.md  testAdd  test.c
 root@aafak-HP-ProBook-4530s:~/aafak/git-demo/mycloud# 
 
 
-----------------------------------to checkin----------------------------------------------------
+----------------------------------to checkin new file----------------------------------------------------
 https://help.github.com/articles/adding-a-file-to-a-repository-from-the-command-line/
 root@aafak-HP-ProBook-4530s:~/aafak/git-demo/mycloud# git status
 # On branch master
@@ -73,8 +73,45 @@ Writing objects: 100% (3/3), 291 bytes, done.
 Total 3 (delta 1), reused 0 (delta 0)
 To https://github.com/aafak/mycloud.git
    46f0d10..5a93717  master -> master
-root@aafak-HP-ProBook-4530s:~/aafak/git-demo/mycloud# 
+root@aafak-HP-ProBook-4530s:~/aafak/git-demo/mycloud# git status
+# On branch master
+nothing to commit (working directory clean)
 
+
+
+-----------------------To chekin existing modify file------------------------------
+root@aafak-HP-ProBook-4530s:~/aafak/git-demo/mycloud# git status
+# On branch master
+nothing to commit (working directory clean)
+root@aafak-HP-ProBook-4530s:~/aafak/git-demo/mycloud# ls
+help  README.md  testAdd  test.c
+root@aafak-HP-ProBook-4530s:~/aafak/git-demo/mycloud# gedit testAdd
+root@aafak-HP-ProBook-4530s:~/aafak/git-demo/mycloud# git status
+# On branch master
+# Changes not staged for commit:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   testAdd
+#
+no changes added to commit (use "git add" and/or "git commit -a")
+root@aafak-HP-ProBook-4530s:~/aafak/git-demo/mycloud# git status -s
+ M testAdd
+root@aafak-HP-ProBook-4530s:~/aafak/git-demo/mycloud# git commit -m "modified one file" 
+[master 9937ed9] modified one file
+ 1 file changed, 2 insertions(+)
+root@aafak-HP-ProBook-4530s:~/aafak/git-demo/mycloud# git status
+# On branch master
+# Your branch is ahead of 'origin/master' by 1 commit.
+#
+nothing to commit (working directory clean)
+root@aafak-HP-ProBook-4530s:~/aafak/git-demo/mycloud# git push
+Username for 'https://github.com': aafak
+Password for 'https://aafak@github.com':behonestcb32
+Counting objects: 5, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 292 bytes, done.
 
 ---------------------To resolve lock-------------------------------------------------
 
