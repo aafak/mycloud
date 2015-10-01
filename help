@@ -19,9 +19,27 @@ nothing added to commit but untracked files present (use "git add" to track)
 root@aafak-HP-ProBook-4530s:~/aafak/git-demo/mycloud# 
 root@aafak-HP-ProBook-4530s:~/aafak/git-demo/mycloud# git status -s
 
-
 ---------------------------TO update:--------------------------------------------
+root@aafak-HP-ProBook-4530s:~/aafak/git-demo/mycloud# ls
+db.properties  help  README.md  testAdd  test.c
+
+delete db.properties from git hub(by website)
 root@aafak-HP-ProBook-4530s:~/aafak/git-demo/mycloud# git pull
+remote: Counting objects: 5, done.
+remote: Compressing objects: 100% (5/5), done.
+remote: Total 5 (delta 3), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (5/5), done.
+From https://github.com/aafak/mycloud
+   5a93717..2b8e444  master     -> origin/master
+Updating 5a93717..2b8e444
+Fast-forward
+ db.properties |    1 -
+ help          |   74 ++++++++++++++++++++++++++++++++++++++++++++++----------------------------
+ 2 files changed, 46 insertions(+), 29 deletions(-)
+ delete mode 100644 db.properties
+root@aafak-HP-ProBook-4530s:~/aafak/git-demo/mycloud# ls
+help  README.md  testAdd  test.c
+root@aafak-HP-ProBook-4530s:~/aafak/git-demo/mycloud# 
 
 
 ----------------------------------to checkin----------------------------------------------------
