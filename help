@@ -1,13 +1,15 @@
+
+Create new repo:
+ https://help.github.com/articles/create-a-repo/
+
+Step2:
 Open Terminal (for Mac and Linux users) or the command prompt (for Windows users).
 
 Type git clone, and then paste the https cloneURL( https://github.com/aafak/mycloud.git) It will look like this, with your GitHub username instead of YOUR-USERNAME:
 
 root@aafak-HP-ProBook-4530s:~/aafak/git-demo# git clone https://github.com/aafak/mycloud.git
-root@aafak-HP-ProBook-4530s:~/aafak/git-demo/mycloud# git status
-# Onbranch master
-nothing to commit (working directory clean)
-root@aafak-HP-ProBook-4530s:~/aafak/git-demo/mycloud# 
-root@aafak-HP-ProBook-4530s:~/aafak/git-demo/mycloud# gedit test.c
+
+------------------Status----------------------------
 root@aafak-HP-ProBook-4530s:~/aafak/git-demo/mycloud# git status
 Onbranch master
 Untrackedfiles:
@@ -15,40 +17,56 @@ Untrackedfiles:
 	test.c
 nothing added to commit but untracked files present (use "git add" to track)
 root@aafak-HP-ProBook-4530s:~/aafak/git-demo/mycloud# 
-root@aafak-HP-ProBook-4530s:~/aafak/git-demo/mycloud# git add test.c 
+root@aafak-HP-ProBook-4530s:~/aafak/git-demo/mycloud# git status -s
+
+
+---------------------------TO update:--------------------------------------------
+root@aafak-HP-ProBook-4530s:~/aafak/git-demo/mycloud# git pull
+
+
+----------------------------------to checkin----------------------------------------------------
+https://help.github.com/articles/adding-a-file-to-a-repository-from-the-command-line/
+root@aafak-HP-ProBook-4530s:~/aafak/git-demo/mycloud# git status
+# On branch master
+nothing to commit (working directory clean)
+root@aafak-HP-ProBook-4530s:~/aafak/git-demo/mycloud# gedit testAdd
+root@aafak-HP-ProBook-4530s:~/aafak/git-demo/mycloud# ls
+db.properties  help  README.md  testAdd  test.c
 root@aafak-HP-ProBook-4530s:~/aafak/git-demo/mycloud# git status
  On branch master
  Changes to be committed:
    (use "git reset HEAD <file>..." to unstage)
 
-	new file:   test.c
-
-root@aafak-HP-ProBook-4530s:~/aafak/git-demo/mycloud# git commit -m "my first file" test.c
-[master 2baa555] my first file
- 1 file changed, 1 insertion(+)
- create mode 100644 test.c
-root@aafak-HP-ProBook-4530s:~/aafak/git-demo/mycloud# git status
- On branch master
- Your branch is ahead of 'origin/master' by 1 commit.
-
-nothing to commit (working directory clean)
-root@aafak-HP-ProBook-4530s:~/aafak/git-demo/mycloud# 
-
-TO update:
+	new file:   testAdd
 root@aafak-HP-ProBook-4530s:~/aafak/git-demo/mycloud# git pull
-
-
-to checkin:
+Already up-to-date.
+root@aafak-HP-ProBook-4530s:~/aafak/git-demo/mycloud# git add testAdd 
+root@aafak-HP-ProBook-4530s:~/aafak/git-demo/mycloud# git commit -m "adding new file"
+[master 5a93717] adding new file
+ 1 file changed, 1 insertion(+)
+ create mode 100644 testAdd
 root@aafak-HP-ProBook-4530s:~/aafak/git-demo/mycloud# git push
 Username for 'https://github.com': aafak
 Password for 'https://aafak@github.com': behonestcb32
-Counting objects: 10, done.
+Counting objects: 4, done.
 Delta compression using up to 4 threads.
-Compressing objects: 100% (6/6), done.
-Writing objects: 100% (7/7), 809 bytes, done.
-Total 7 (delta 2), reused 0 (delta 0)
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 291 bytes, done.
+Total 3 (delta 1), reused 0 (delta 0)
 To https://github.com/aafak/mycloud.git
-   f864a4e..c1a857d  master -> master
+   46f0d10..5a93717  master -> master
 root@aafak-HP-ProBook-4530s:~/aafak/git-demo/mycloud# 
+
+
+---------------------To resolve lock-------------------------------------------------
+
+root@aafak-HP-ProBook-4530s:~/aafak/git-demo/mycloud# git checkout build.xml
+fatal: Unable to create '/root/aafak/git-demo/mycloud/.git/index.lock': File exists.
+
+If no other git process is currently running, this probably means a
+git process crashed in this repository earlier. Make sure no other git
+process is running and remove the file manually to continue.
+root@aafak-HP-ProBook-4530s:~/aafak/git-demo/mycloud# rm -f ./.git/index.lock
+
 
 
